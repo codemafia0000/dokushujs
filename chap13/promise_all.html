@@ -1,0 +1,18 @@
+<script>
+    function wait(ms) {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log(`${ms}msの処理が完了しました。`);
+                resolve(ms);
+            }, ms); // 引数のms分だけ待機
+        });
+    }
+    const wait400 = wait(400);
+    const wait500 = wait(500);
+    const wait600 = wait(600);
+    Promise.all([wait400, wait500, wait600])
+        .then(([first, second, third]) => {
+            console.log("すべてのPromiseが完了しました。");
+            console.log(first, second, third)
+        });
+</script>
