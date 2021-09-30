@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>値を足し合わせるAPP</title>
+</head>
+
+<body>
+    <!-- パラメータval1、val2、sumの挿入 -->
+    <input id="val1" type="number" value="<%- val1 %>">
+    + <input id="val2" type="number" value="<%- val2 %>">
+    = <span id="answer">
+        <%- sum %>
+    </span>
+    <!-- client-plus.jsを読み込みます。 -->
+    <script src="/client-plus.js" defer></script>
+</body>
+
+</html>
