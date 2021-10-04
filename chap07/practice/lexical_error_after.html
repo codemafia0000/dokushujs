@@ -1,11 +1,11 @@
 <script>
-    let rand;
     function chance() {
-        rand = Math.random();
+        let result;
+        let rand = Math.random();
         if (rand < .5) {
-            let result = "成功";
+            result = "成功";
         } else {
-            let result = "失敗";
+            result = "失敗";
         }
         return result;
     }
