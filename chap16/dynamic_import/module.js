@@ -1,3 +1,3 @@
 export function exportedFn() {
-  console.log("exportedFn is called");
+  console.log("exportedFnが呼ばれました。");
 }
