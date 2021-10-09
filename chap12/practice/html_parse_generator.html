@@ -1,16 +1,8 @@
 <script>
-    const html = `<!DOCTYPE html>
-<html>
-<head>
-    <title>Document</title>
-</head>
-<body>
-    <h1>見出し１</h1>    
+    const html = `<h1>見出し１</h1>    
     <h2>見出し２</h2>    
     <h3>見出し３</h3>    
-    <header>ヘッダー</header>
-</body>
-</html>`;
+    <header>ヘッダー</header>`;
 
     function* hTagGen(htmlStr) {
         const matches = html.matchAll(/<(h[1-6])>(.+)<\/\1>/g); // h1~h6のマッチを確認
