@@ -1,5 +1,5 @@
 {
-    "name": "test-project",
+    "name": "sample",
     "author": "独習太郎 <taro@dokusyu.com> (https://dokusyu.com)",
     "version": "1.0.0",
     "description": "A Test project",
@@ -11,7 +11,7 @@
     },
     "private": true,
     "scripts": {
-    "dev": "webpack-dev-server --config build/webpack.dev.conf.js",
+    "dev": "node sample.js",
     "start": "npm run dev"
     },
     "dependencies": {
