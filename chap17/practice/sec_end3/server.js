@@ -30,4 +30,5 @@ app.get("/plus", (req, res) => {
 
 app.listen(port, () => {
   console.log(`listening at http://localhost:${port}?countdown=5`);
+  console.log(`listening at http://localhost:${port}/plus?val1=5&val2=6`);
 });
