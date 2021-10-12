@@ -18,8 +18,6 @@
     const printTime = ({ personName, time }) => console.log(`${personName}のタイムは${time}です。`);
 
     // ① 三人でバトンを繋いでリレー
-
-    // リレー開始
     run("太郎")
         .then(result => {
             printTime(result); // 太郎の結果
